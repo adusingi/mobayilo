@@ -150,6 +150,7 @@
     $("header").backstretch("img/york.jpg");
     $(".photo").backstretch("img/bg-2.jpg");
     $(".photo-centered").backstretch("img/collab.jpg");
+    $(".logos-partner").backstretch("img/telecomoss.jpg");
 
     // Simple Text Rotator
     $("#words").wordsrotator({
