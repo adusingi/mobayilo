@@ -147,9 +147,9 @@
     });
 
     // backstretch
-    $("header").backstretch("img/bg.jpg");
+    $("header").backstretch("img/york.jpg");
     $(".photo").backstretch("img/bg-2.jpg");
-    $(".photo-centered").backstretch("img/bg-3.jpg");
+    $(".photo-centered").backstretch("img/collab.jpg");
 
     // Simple Text Rotator
     $("#words").wordsrotator({
@@ -160,7 +160,7 @@
       animationIn: "fadeInDown",         //css class for entrace animation
       animationOut: "fadeOutUp",           //css class for exit animation
       speed: 4000,                //delay in milliseconds between two words
-      words: ['<strong>Everything you need</strong> for your next telecom deployement.','<strong>Simple and easy</strong> modern software.','<strong>Data, maps, communication, approvals</strong> all in one.']  //Array of words, it may contain HTML values
+      words: ['<strong>Everything you need</strong> for your next telecom deployement.','<strong>Simple and easy</strong> modern software.','<strong>Network Parameters, Maps, Dashboard, Communication and Integration</strong> info in one place']  //Array of words, it may contain HTML values
     });
 
     // Simple Text Rotator
