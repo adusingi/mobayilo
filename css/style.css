@@ -232,7 +232,7 @@
 
   .lj-logo a,
   .lj-logo img {
-    height: 60px;
+    height: 75px;
   }
 
   .lj-logo a {
@@ -698,6 +698,11 @@
 
   .photo-centered {
     padding: 200px 0;
+    color:white;
+  }
+
+  .photo-centered h2, .photo-centered p{
+    color:white;
   }
 
   .logos-partner {
@@ -1102,7 +1107,7 @@
 
   .join-now {
     padding: 100px 0 70px;
-    background-color: #f2f3f7;
+    background-color: #2b2f3e;
   }
 
   .lj-join-now-title h2 {
@@ -1110,6 +1115,7 @@
     font-size: 2.5em;
     margin: 0;
     text-align: center;
+    color:white;
   }
 
   .lj-join-now-title h2 strong {
@@ -1119,6 +1125,7 @@
   .lj-join-now-title p {
     text-align: center;
     margin-bottom: 75px;
+    color:white;
   }
 
   .lj-join-now-form {
