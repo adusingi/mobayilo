@@ -53,47 +53,47 @@
     });
 
     // Join now form functions
-    $(function () {
-      $("#join-now").on('submit',function (event) {
-        var input = $('.lj-join-now-message');
-          if(!input.is(':empty')) {
-            $('.lj-join-now-message').stop(true);
-          }
-          event.preventDefault();
-          event.stopImmediatePropagation();
-
-          var name = $("input#join-now-name").val();
-          var email = $("input#join-now-email").val();
-
-          if (name == "" || email == "") {
-
-            $(".lj-join-now-message").stop(true).html('<i class="fa fa-warning"></i> All fields are required.');
-            $('#join-now input[type=text]').each(function() {
-                if ( this.value === '' ) {
-                    this.focus();
-                    return false;
-                }
-            });
-          }
-          else if (!isValidEmailAddress( email )) {
-            $(".lj-join-now-message").stop(true).html('<i class="fa fa-warning"></i> E-mail address is not valid.');
-            $("input#join-now-email").focus();
-          }
-          else {
-            $.ajax({
-              type: "POST",
-              url: "./php/send-join-now.php",
-              data: {join_now_email:email,
-                     join_now_name:name},
-              success: function () {
-                $(".lj-join-now-message").html('<i class="fa fa-check"></i> Thank you for joining in!');
-                $('input#join-now-name').val('');
-                $('input#join-now-email').val('');
-              }
-            });
-          }
-       });
-    });
+    // $(function () {
+    //   $("#join-now").on('submit',function (event) {
+    //     var input = $('.lj-join-now-message');
+    //       if(!input.is(':empty')) {
+    //         $('.lj-join-now-message').stop(true);
+    //       }
+    //       event.preventDefault();
+    //       event.stopImmediatePropagation();
+    //
+    //       var name = $("input#mce-FNAME").val();
+    //       var email = $("input#join-now-email").val();
+    //
+    //       if (name == "" || email == "") {
+    //
+    //         $(".lj-join-now-message").stop(true).html('<i class="fa fa-warning"></i> All fields are required.');
+    //         $('#join-now input[type=text]').each(function() {
+    //             if ( this.value === '' ) {
+    //                 this.focus();
+    //                 return false;
+    //             }
+    //         });
+    //       }
+    //       else if (!isValidEmailAddress( email )) {
+    //         $(".lj-join-now-message").stop(true).html('<i class="fa fa-warning"></i> E-mail address is not valid.');
+    //         $("input#join-now-email").focus();
+    //       }
+    //       else {
+    //         $.ajax({
+    //           type: "POST",
+    //           url: "./php/send-join-now.php",
+    //           data: {join_now_email:email,
+    //                  join_now_name:name},
+    //           success: function () {
+    //             $(".lj-join-now-message").html('<i class="fa fa-check"></i> Thank you for joining in!');
+    //             $('input#mce-FNAME').val('');
+    //             $('input#join-now-email').val('');
+    //           }
+    //         });
+    //       }
+    //    });
+    // });
 
     // Slick initializer function
     $(".lj-carousel").slick({
@@ -161,7 +161,7 @@
       animationIn: "fadeInDown",         //css class for entrace animation
       animationOut: "fadeOutUp",           //css class for exit animation
       speed: 4000,                //delay in milliseconds between two words
-      words: ['<strong>Everything you need</strong> for your next telecom deployement.','<strong>Simple and easy</strong> modern software.','<strong>Network Parameters, Maps, Dashboard, Communication and Integration</strong> info in one place']  //Array of words, it may contain HTML values
+      words: ['Network Parameters, Maps, Dashboard, Communication and Integration info in one Place','Everything you need for you daily network follow up activities','Simple and easy to use modern application']  //Array of words, it may contain HTML values
     });
 
     // Simple Text Rotator
@@ -173,7 +173,7 @@
       animationIn: "fadeInDown",         //css class for entrace animation
       animationOut: "fadeOutUp",           //css class for exit animation
       speed: 4000,                //delay in milliseconds between two words
-      words: ['<strong>Boost the productivity </strong> of your telecom engineering team.','Software by <strong>telecom engineers for telecom engineers</strong>.']  //Array of words, it may contain HTML values
+      words: ['Boost your team’s <strong>collaboration and productivity</strong> of your telecom engineering team.','TeamWork application by telecom engineer for telecom engineers.']  //Array of words, it may contain HTML values
     });
 
     // WOW initalization
