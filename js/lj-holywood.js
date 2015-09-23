@@ -118,15 +118,15 @@
     });
 
     // Scroll to subscribe module
-    $(".lj-text-button a").on('click',function(e) {
-      e.preventDefault();
-      $('html,body').animate({
-        scrollTop: $(".subscribe").offset().top},
-        1250);
-        setTimeout(function() {
-          $('input#subscribe-email').focus();
-        }, 1250);
-    });
+    // $(".lj-text-button a").on('click',function(e) {
+    //   e.preventDefault();
+    //   $('html,body').animate({
+    //     scrollTop: $(".subscribe").offset().top},
+    //     1250);
+    //     setTimeout(function() {
+    //       $('input#subscribe-email').focus();
+    //     }, 1250);
+    // });
 
     // Featherlight
     $('.lj-projects-item a').featherlight({
