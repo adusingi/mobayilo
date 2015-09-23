@@ -18,39 +18,39 @@
     };
 
     // Subscription form notifications and AJAX function
-    $(function () {
-      $("#subscribe").on('submit', function (event) {
-        var input = $('.lj-subscribe-message');
-          if(!input.is(':empty')) {
-            $('.lj-subscribe-message').stop(true);
-          }
-          event.preventDefault();
-          event.stopImmediatePropagation();
-
-          var email = $("input#subscribe-email").val();
-
-          if (email == "") {
-
-            $(".lj-subscribe-message").stop(true).html('<i class="fa fa-warning"></i> You must enter a valid e-mail address.');
-            $("input#subscribe-email").focus();
-          }
-          else if (!isValidEmailAddress( email )) {
-            $(".lj-subscribe-message").stop(true).html('<i class="fa fa-warning"></i> E-mail address is not valid.');
-            $("input#subscribe-email").focus();
-          }
-          else {
-            $.ajax({
-              type: "POST",
-              url: "./php/send-subscription.php",
-              data: {subscription:email},
-              success: function () {
-                $(".lj-subscribe-message").html('<i class="fa fa-check"></i> We will be in touch soon!');
-                $('input#subscribe-email').val('');
-              }
-            });
-          }
-       });
-    });
+    // $(function () {
+    //   $("#subscribe").on('submit', function (event) {
+    //     var input = $('.lj-subscribe-message');
+    //       if(!input.is(':empty')) {
+    //         $('.lj-subscribe-message').stop(true);
+    //       }
+    //       event.preventDefault();
+    //       event.stopImmediatePropagation();
+    //
+    //       var email = $("input#subscribe-email").val();
+    //
+    //       if (email == "") {
+    //
+    //         $(".lj-subscribe-message").stop(true).html('<i class="fa fa-warning"></i> You must enter a valid e-mail address.');
+    //         $("input#subscribe-email").focus();
+    //       }
+    //       else if (!isValidEmailAddress( email )) {
+    //         $(".lj-subscribe-message").stop(true).html('<i class="fa fa-warning"></i> E-mail address is not valid.');
+    //         $("input#subscribe-email").focus();
+    //       }
+    //       else {
+    //         $.ajax({
+    //           type: "POST",
+    //           url: "./php/send-subscription.php",
+    //           data: {subscription:email},
+    //           success: function () {
+    //             $(".lj-subscribe-message").html('<i class="fa fa-check"></i> We will be in touch soon!');
+    //             $('input#subscribe-email').val('');
+    //           }
+    //         });
+    //       }
+    //    });
+    // });
 
     // Join now form functions
     // $(function () {
