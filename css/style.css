@@ -55,7 +55,7 @@
   }
 
   body {
-    font: 16px/1.5 "Open Sans", "Century Gothic", "Trebuchet MS", Helvetica, sans-serif;
+    font: 20px/1.5 "Open Sans", "Century Gothic", "Trebuchet MS", Helvetica, sans-serif;
     background-color: #fff;
     color: #2b2f3e;
     font-weight: 300;
@@ -1868,3 +1868,8 @@
     width:130px;
     padding-left:10px;
   }
+
+
+.managed {
+   margin-right: 5px;
+}
